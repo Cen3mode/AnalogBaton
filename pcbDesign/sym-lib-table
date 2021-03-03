@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ATSAME51J18A-devboard-rescue)(type Legacy)(uri ${KIPRJMOD}/ATSAME51J18A-devboard-rescue.lib)(options "")(descr ""))
+)
