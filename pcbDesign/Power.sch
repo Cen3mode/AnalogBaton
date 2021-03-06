@@ -67,7 +67,7 @@ P 4150 1400
 AR Path="/604E1596" Ref="C?"  Part="1" 
 AR Path="/604D6BAE/604E1596" Ref="C17"  Part="1" 
 F 0 "C17" H 4035 1354 50  0000 R CNN
-F 1 "C" H 4035 1445 50  0000 R CNN
+F 1 "2.2u" H 4035 1445 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 4188 1250 50  0001 C CNN
 F 3 "~" H 4150 1400 50  0001 C CNN
 	1    4150 1400
@@ -80,7 +80,7 @@ P 6700 1400
 AR Path="/604E159C" Ref="C?"  Part="1" 
 AR Path="/604D6BAE/604E159C" Ref="C21"  Part="1" 
 F 0 "C21" H 6585 1354 50  0000 R CNN
-F 1 "C" H 6585 1445 50  0000 R CNN
+F 1 "2.2u" H 6585 1445 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 6738 1250 50  0001 C CNN
 F 3 "~" H 6700 1400 50  0001 C CNN
 	1    6700 1400
@@ -382,17 +382,11 @@ $EndComp
 Text GLabel 6900 3500 0    50   BiDi ~ 0
 CHARGE_ENABLE
 Wire Wire Line
-	6900 3500 6900 3850
-Wire Wire Line
 	6900 3850 7100 3850
-Text GLabel 6500 4050 0    50   BiDi ~ 0
+Text GLabel 6150 4050 0    50   BiDi ~ 0
 CHARGE_MODE_CH0
-Wire Wire Line
-	7100 4050 6500 4050
-Text GLabel 6500 4150 0    50   BiDi ~ 0
+Text GLabel 6150 4150 0    50   BiDi ~ 0
 CHARGE_MODE_CH1
-Wire Wire Line
-	6500 4150 7100 4150
 $Comp
 L power:GND #PWR?
 U 1 1 60535922
@@ -675,8 +669,6 @@ F 3 "~" H 2450 3400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2750 3400 2550 3400
-Wire Wire Line
-	2350 3400 2350 3300
 Wire Wire Line
 	2350 3200 2600 3200
 $Comp
@@ -1023,30 +1015,7 @@ F 3 "~" H 2450 1650 50  0001 C CNN
 	1    2450 1650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 605F8711
-P 2250 3400
-AR Path="/605F8711" Ref="R?"  Part="1" 
-AR Path="/604D6BAE/605F8711" Ref="R5"  Part="1" 
-F 0 "R5" H 2309 3446 50  0000 L CNN
-F 1 "10k" H 2309 3355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 2250 3400 50  0001 C CNN
-F 3 "~" H 2250 3400 50  0001 C CNN
-	1    2250 3400
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2100 3500 2250 3500
 Connection ~ 2750 3500
-Connection ~ 2250 3500
-Wire Wire Line
-	2250 3500 2750 3500
-Wire Wire Line
-	2250 3300 2350 3300
-Connection ~ 2350 3300
-Wire Wire Line
-	2350 3300 2350 3200
 Text GLabel 1500 2500 0    50   BiDi ~ 0
 EN
 Text GLabel 1500 2300 0    50   BiDi ~ 0
@@ -1134,5 +1103,118 @@ F 2 "" H 4500 900 50  0001 C CNN
 F 3 "" H 4500 900 50  0001 C CNN
 	1    4500 900 
 	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2100 3500 2350 3500
+Wire Wire Line
+	2350 3200 2350 3400
+$Comp
+L Device:R_Small R?
+U 1 1 60446814
+P 2350 3600
+AR Path="/60446814" Ref="R?"  Part="1" 
+AR Path="/604D6BAE/60446814" Ref="R5"  Part="1" 
+F 0 "R5" H 2409 3646 50  0000 L CNN
+F 1 "10k" H 2409 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 2350 3600 50  0001 C CNN
+F 3 "~" H 2350 3600 50  0001 C CNN
+	1    2350 3600
+	-1   0    0    -1  
+$EndComp
+Connection ~ 2350 3500
+Wire Wire Line
+	2350 3500 2750 3500
+Text GLabel 2150 3700 0    50   BiDi ~ 0
+VBUS_3V3_CH0_REG
+Wire Wire Line
+	2150 3700 2350 3700
+$Comp
+L Device:R_Small R?
+U 1 1 6044EFF2
+P 6900 3300
+AR Path="/6044EFF2" Ref="R?"  Part="1" 
+AR Path="/604D6BAE/6044EFF2" Ref="R22"  Part="1" 
+F 0 "R22" H 6959 3346 50  0000 L CNN
+F 1 "10k" H 6959 3255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6900 3300 50  0001 C CNN
+F 3 "~" H 6900 3300 50  0001 C CNN
+	1    6900 3300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3400 6900 3850
+$Comp
+L power:GND #PWR?
+U 1 1 60453D31
+P 6900 3200
+AR Path="/60453D31" Ref="#PWR?"  Part="1" 
+AR Path="/604D6BAE/60453D31" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 6900 2950 50  0001 C CNN
+F 1 "GND" H 6905 3027 50  0000 C CNN
+F 2 "" H 6900 3200 50  0001 C CNN
+F 3 "" H 6900 3200 50  0001 C CNN
+	1    6900 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 604579F6
+P 6300 4250
+AR Path="/604579F6" Ref="R?"  Part="1" 
+AR Path="/604D6BAE/604579F6" Ref="R21"  Part="1" 
+F 0 "R21" H 6359 4296 50  0000 L CNN
+F 1 "10k" H 6359 4205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6300 4250 50  0001 C CNN
+F 3 "~" H 6300 4250 50  0001 C CNN
+	1    6300 4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 6045A6CE
+P 6300 3950
+AR Path="/6045A6CE" Ref="R?"  Part="1" 
+AR Path="/604D6BAE/6045A6CE" Ref="R20"  Part="1" 
+F 0 "R20" H 6359 3996 50  0000 L CNN
+F 1 "10k" H 6359 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6300 3950 50  0001 C CNN
+F 3 "~" H 6300 3950 50  0001 C CNN
+	1    6300 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4050 6300 4050
+Connection ~ 6300 4050
+Wire Wire Line
+	6300 4050 7100 4050
+Wire Wire Line
+	6150 4150 6300 4150
+Connection ~ 6300 4150
+Wire Wire Line
+	6300 4150 7100 4150
+Wire Wire Line
+	7600 3450 7050 3450
+Wire Wire Line
+	7050 3450 7050 2900
+Wire Wire Line
+	7050 2900 6150 2900
+Wire Wire Line
+	6150 2900 6150 3600
+Wire Wire Line
+	6150 3600 6300 3600
+Wire Wire Line
+	6300 3600 6300 3850
+$Comp
+L power:GND #PWR?
+U 1 1 60476435
+P 6300 4350
+AR Path="/60476435" Ref="#PWR?"  Part="1" 
+AR Path="/604D6BAE/60476435" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 6300 4100 50  0001 C CNN
+F 1 "GND" H 6305 4177 50  0000 C CNN
+F 2 "" H 6300 4350 50  0001 C CNN
+F 3 "" H 6300 4350 50  0001 C CNN
+	1    6300 4350
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
