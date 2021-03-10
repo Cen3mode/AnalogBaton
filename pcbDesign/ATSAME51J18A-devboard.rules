@@ -1,0 +1,104 @@
+
+(rules PCB ATSAME51J18A-devboard
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 93)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.3)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.4)
+    )
+  )
+  (rule
+    (width 200.0)
+    (clear 127.2)
+    (clear 100.0 (type smd_to_turn_gap))
+    (clear 31.8 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-Power" "Via[0-1]_800:400_um" Power
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    Power "Via[0-1]_800:400_um-Power"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND "Net-(C3-Pad1)" "Net-(C4-Pad2)" RST "Net-(C6-Pad2)" "Net-(C8-Pad1)" "Net-(C9-Pad2)" "Net-(C9-Pad1)"
+    "Net-(C13-Pad1)" "Net-(C14-Pad2)" "Net-(C14-Pad1)" "Net-(C15-Pad1)" "Net-(C16-Pad2)" "Net-(C17-Pad2)" "Net-(C17-Pad1)" "Net-(C21-Pad2)"
+    "Net-(C21-Pad1)" "Net-(C23-Pad1)" "Net-(C24-Pad1)" "NEOPIXEL_DOUT" "NEOPIXEL_DIN" "Net-(D2-Pad1)" "Net-(D7-Pad2)" QDAT3
+    QSCK QDAT0 QCS QDAT1 QDAT2 3[SCL] 2[SDA] 27
+    26 23 22 19 18 14[I2SMCLK] 11[I2SDI] 10[I2SDO]
+    CHRG EN 29[CANL] 28[CANH] 25 24 21 20
+    17 16 13 12 9[CS] 8[MI] 5[MO] 4[SCK]
+    1[Tx0] 0[Rx0] AREF "Net-(J9-PadB5)" "Net-(J9-PadA5)" "EN_2" "Net-(R6-Pad1)" "Net-(R11-Pad2)"
+    "Net-(R12-Pad2)" "Net-(R13-Pad1)" "Net-(R17-Pad1)" "Net-(R18-Pad1)" "CAN_S" "CAN_RX" "CAN_TX" "CHARGE_MODE_CH0"
+    "CHARGE_MODE_CH1" "CHARGE_ENABLE" "Net-(U8-Pad9)" "Net-(U8-Pad11)" "Net-(U8-Pad4)" "Net-(D8-Pad2)" "Net-(D9-Pad2)" 15
+    7[I2SWS] 6[I2SSCK] "USB_P" "USB_N" 31 30
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    +5V "VBUS_NREG" "VBUS_VIN_5V_REG" "VBUS_3V3_CH1_REG" "VBUS_-3V3_CH2_REG" "VBUS_USB_NREG" "VBUS_VIN_NREG" "VBUS_BAT"
+    "VBUS_BAT_NREG" "VBUS_3V3_CH0_REG"
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

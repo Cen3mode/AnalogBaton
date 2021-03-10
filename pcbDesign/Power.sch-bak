@@ -599,8 +599,6 @@ Wire Wire Line
 	10650 4000 10550 4000
 Wire Wire Line
 	10650 3300 10650 4000
-Text GLabel 10550 4000 3    50   BiDi ~ 0
-GPOUT_PIN
 Connection ~ 7600 3450
 Wire Wire Line
 	8300 3950 8300 4250
@@ -1217,4 +1215,6 @@ F 3 "" H 6300 4350 50  0001 C CNN
 	1    6300 4350
 	1    0    0    -1  
 $EndComp
+Text GLabel 8100 3250 1    50   BiDi ~ 0
+VBUS_BAT_NREG
 $EndSCHEMATC

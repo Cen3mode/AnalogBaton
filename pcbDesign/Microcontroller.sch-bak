@@ -62,9 +62,9 @@ F 3 "" H 4100 5450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 4400 4800 0    50   BiDi ~ 0
-USB_DM
+USB_N
 Text GLabel 4400 4900 0    50   BiDi ~ 0
-USB_DP
+USB_P
 Wire Wire Line
 	4400 5400 4400 5450
 Connection ~ 4400 5450
@@ -97,7 +97,7 @@ Text GLabel 8500 3200 2    50   BiDi ~ 0
 Text GLabel 4400 2700 0    50   BiDi ~ 0
 AREF
 Text GLabel 8500 4000 2    50   BiDi ~ 0
-6[I2SCK]
+6[I2SSCK]
 Text GLabel 8500 4100 2    50   BiDi ~ 0
 14[I2SMCLK]
 Text GLabel 4400 4600 0    50   BiDi ~ 0
@@ -105,7 +105,7 @@ Text GLabel 4400 4600 0    50   BiDi ~ 0
 Text GLabel 4400 4500 0    50   BiDi ~ 0
 10[I2SDO]
 Text GLabel 4400 4400 0    50   BiDi ~ 0
-15[I2SFS]
+7[I2SWS]
 Text GLabel 3950 5650 0    50   BiDi ~ 0
 RST
 Wire Wire Line
@@ -179,7 +179,7 @@ Text GLabel 8500 2900 2    50   BiDi ~ 0
 19
 Text GLabel 8500 3600 2    50   BiDi ~ 0
 12
-Text GLabel 8500 3700 2    50   BiDi ~ 0
+Text GLabel 8500 4600 3    50   BiDi ~ 0
 13
 Text GLabel 4400 2800 0    50   BiDi ~ 0
 22
@@ -279,7 +279,7 @@ U 1 1 604B1962
 P 3700 1950
 F 0 "Y1" H 3700 2218 50  0000 C CNN
 F 1 "32.768" H 3700 2127 50  0000 C CNN
-F 2 "Oscillator:Oscillator_SMD_Abracon_ASCO-4Pin_1.6x1.2mm" H 3700 1950 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm" H 3700 1950 50  0001 C CNN
 F 3 "~" H 3700 1950 50  0001 C CNN
 	1    3700 1950
 	1    0    0    -1  
@@ -370,4 +370,8 @@ F 3 "" H 5500 1600 50  0001 C CNN
 	1    5500 1600
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	8500 4600 8500 4500
+Text GLabel 8500 3700 2    50   BiDi ~ 0
+15
 $EndSCHEMATC
