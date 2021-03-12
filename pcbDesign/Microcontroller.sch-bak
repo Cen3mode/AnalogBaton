@@ -75,7 +75,7 @@ SWCLK
 Text GLabel 4400 5200 0    50   BiDi ~ 0
 SWDIO
 Text GLabel 8500 4400 2    50   BiDi ~ 0
-SWO
+SWDO
 Text GLabel 3600 3550 3    50   BiDi ~ 0
 QDAT0
 Text GLabel 3700 3550 3    50   BiDi ~ 0
@@ -374,4 +374,30 @@ Wire Wire Line
 	8500 4600 8500 4500
 Text GLabel 8500 3700 2    50   BiDi ~ 0
 15
+$Comp
+L Switch:SW_Push SW?
+U 1 1 6051008F
+P 4750 6150
+F 0 "SW?" H 4750 6435 50  0000 C CNN
+F 1 "SW_Push" H 4750 6344 50  0000 C CNN
+F 2 "" H 4750 6350 50  0001 C CNN
+F 3 "~" H 4750 6350 50  0001 C CNN
+	1    4750 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 5650 4550 5650
+Wire Wire Line
+	4550 5650 4550 6150
+$Comp
+L power:GND #PWR?
+U 1 1 60510F6A
+P 4950 6150
+F 0 "#PWR?" H 4950 5900 50  0001 C CNN
+F 1 "GND" H 4955 5977 50  0000 C CNN
+F 2 "" H 4950 6150 50  0001 C CNN
+F 3 "" H 4950 6150 50  0001 C CNN
+	1    4950 6150
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
