@@ -76,17 +76,17 @@ Text GLabel 4400 5200 0    50   BiDi ~ 0
 SWDIO
 Text GLabel 8500 4400 2    50   BiDi ~ 0
 SWDO
-Text GLabel 3600 3550 3    50   BiDi ~ 0
+Text GLabel 4400 3200 0    50   BiDi ~ 0
 QDAT0
-Text GLabel 3700 3550 3    50   BiDi ~ 0
+Text GLabel 4400 3300 0    50   BiDi ~ 0
 QDAT1
-Text GLabel 3800 3550 3    50   BiDi ~ 0
+Text GLabel 4400 3400 0    50   BiDi ~ 0
 QDAT2
-Text GLabel 3900 3550 3    50   BiDi ~ 0
+Text GLabel 4400 3500 0    50   BiDi ~ 0
 QDAT3
-Text GLabel 9350 3600 3    50   BiDi ~ 0
+Text GLabel 8500 3400 2    50   BiDi ~ 0
 QSCK
-Text GLabel 9250 3600 3    50   BiDi ~ 0
+Text GLabel 8500 3500 2    50   BiDi ~ 0
 QCS
 Text GLabel 4400 4000 0    50   BiDi ~ 0
 2[SDA]
@@ -111,68 +111,22 @@ RST
 Wire Wire Line
 	3950 5650 4400 5650
 Connection ~ 4400 5650
-Text GLabel 8500 2400 2    50   BiDi ~ 0
+Text GLabel 9050 2400 2    50   BiDi ~ 0
 4[SCK]
-Text GLabel 8500 2600 2    50   BiDi ~ 0
+Text GLabel 9050 2600 2    50   BiDi ~ 0
 5[MO]
-Text GLabel 8500 2700 2    50   BiDi ~ 0
+Text GLabel 9050 2700 2    50   BiDi ~ 0
 8[MI]
 Text GLabel 8500 2500 2    50   BiDi ~ 0
 9[CS]
-Text GLabel 3600 3100 1    50   BiDi ~ 0
+Text GLabel 9500 2500 2    50   BiDi ~ 0
 SDCMD
-Text GLabel 9350 3300 1    50   BiDi ~ 0
+Text GLabel 4400 3100 0    50   BiDi ~ 0
 SDDAT3
-Text GLabel 3900 3100 1    50   BiDi ~ 0
-SDDAT2
-Text GLabel 9250 3300 1    50   BiDi ~ 0
+Text GLabel 9000 2400 1    50   BiDi ~ 0
 SDCLK
-Text GLabel 3700 3100 1    50   BiDi ~ 0
+Text GLabel 9500 2800 2    50   BiDi ~ 0
 SDDAT0
-Text GLabel 3800 3100 1    50   BiDi ~ 0
-SDDAT1
-Wire Wire Line
-	4400 3500 3900 3500
-Wire Wire Line
-	3900 3500 3900 3550
-Wire Wire Line
-	3800 3400 3800 3550
-Wire Wire Line
-	4400 3300 3700 3300
-Wire Wire Line
-	3700 3300 3700 3550
-Wire Wire Line
-	4400 3200 3600 3200
-Wire Wire Line
-	3600 3200 3600 3550
-Wire Wire Line
-	3600 3100 3600 3200
-Connection ~ 3600 3200
-Wire Wire Line
-	3700 3100 3700 3300
-Connection ~ 3700 3300
-Wire Wire Line
-	4400 3400 3800 3400
-Wire Wire Line
-	3800 3100 3800 3400
-Connection ~ 3800 3400
-Wire Wire Line
-	3900 3100 3900 3500
-Connection ~ 3900 3500
-Wire Wire Line
-	8500 3400 9350 3400
-Wire Wire Line
-	9350 3400 9350 3300
-Wire Wire Line
-	8500 3500 9250 3500
-Wire Wire Line
-	9250 3500 9250 3300
-Wire Wire Line
-	9350 3600 9350 3400
-Connection ~ 9350 3400
-Wire Wire Line
-	9250 3600 9250 3500
-Connection ~ 9250 3500
 Text GLabel 8500 2800 2    50   BiDi ~ 0
 18
 Text GLabel 8500 2900 2    50   BiDi ~ 0
@@ -257,16 +211,6 @@ F 3 "" H 5000 1600 50  0001 C CNN
 $EndComp
 Text GLabel 8500 4500 2    50   BiDi ~ 0
 LED_PIN
-Text GLabel 4100 3000 1    50   BiDi ~ 0
-SDCD
-Text GLabel 4000 3000 1    50   BiDi ~ 0
-SDWP
-Wire Wire Line
-	4100 3000 4400 3000
-Wire Wire Line
-	4400 3100 4000 3100
-Wire Wire Line
-	4000 3100 4000 3000
 Text GLabel 8500 3300 2    50   BiDi ~ 0
 1[Tx0]
 Text GLabel 4400 2600 0    50   BiDi ~ 0
@@ -400,4 +344,24 @@ F 3 "" H 4850 6150 60  0000 C CNN
 	1    4850 6150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8500 2600 9000 2600
+Wire Wire Line
+	9050 2700 9000 2700
+Wire Wire Line
+	8500 2400 9050 2400
+Wire Wire Line
+	9500 2500 9000 2500
+Wire Wire Line
+	9000 2500 9000 2600
+Connection ~ 9000 2600
+Wire Wire Line
+	9000 2600 9050 2600
+Wire Wire Line
+	9500 2800 9000 2800
+Wire Wire Line
+	9000 2800 9000 2700
+Connection ~ 9000 2700
+Wire Wire Line
+	9000 2700 8500 2700
 $EndSCHEMATC
