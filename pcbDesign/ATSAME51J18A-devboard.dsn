@@ -1,9 +1,9 @@
-(pcb "F:\Baton\pcbDesign\ATSAME51J18A-devboard.dsn"
+(pcb "/home/cen3mode/Documents/pcbDesigns/Baton/pcbDesign/ATSAME51J18A-devboard.dsn"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
     (host_cad "KiCad's Pcbnew")
-    (host_version "(5.1.6)-1")
+    (host_version "5.1.5+dfsg1-2build2")
   )
   (resolution um 10)
   (unit um)
@@ -31,10 +31,10 @@
             141268 -111804  141422 -111677  141597 -111583  141788 -111526
             141986 -111506  222504 -111506  222674 -111525)
     )
-    (keepout "" (polygon F.Cu 0  155881 -134330  152071 -134330  152071 -129250  155881 -129250
-            155881 -134330))
-    (keepout "" (polygon B.Cu 0  155881 -134330  152071 -134330  152071 -129250  155881 -129250
-            155881 -134330))
+    (keepout "" (polygon F.Cu 0  176963 -134112  173153 -134112  173153 -129540  176963 -129540
+            176963 -134112))
+    (keepout "" (polygon B.Cu 0  176963 -134112  173153 -134112  173153 -129540  176963 -129540
+            176963 -134112))
     (via "Via[0-1]_800:400_um")
     (rule
       (width 200)
@@ -45,14 +45,14 @@
   )
   (placement
     (component "PTS636:PTS636 SM25F SMTR LFS"
-      (place SW1 172466 -128016 front 90 (PN RST))
+      (place SW1 202438 -128270 front 90 (PN RST))
     )
     (component Connector_PinSocket_2.54mm:PinSocket_1x32_P2.54mm_Vertical
       (place J11 221488 -114300 front 270 (PN Conn_01x32_Male))
       (place J7 221488 -137160 front 270 (PN Conn_01x32_Male))
     )
     (component "Package_QFP:TQFP-64_10x10mm_P0.5mm"
-      (place U2 163322 -125222 front 90 (PN "ATSAME51J18A-A"))
+      (place U2 184404 -125222 front 90 (PN "ATSAME51J18A-A"))
     )
     (component USB4105_REVA:GCT_USB4105_REVA
       (place J9 143002 -129794 front 270 (PN USB4105_REVA))
@@ -64,9 +64,9 @@
     (component Resistor_SMD:R_0402_1005Metric
       (place R24 151892 -118872 front 180 (PN 10k))
       (place R23 151892 -121158 front 180 (PN 10k))
-      (place R22 182753 -120396 back 90 (PN 10k))
-      (place R21 186055 -127000 back 180 (PN 10k))
-      (place R20 185420 -128270 back 0 (PN 10k))
+      (place R22 158623 -121158 back 90 (PN 10k))
+      (place R21 161925 -127762 back 180 (PN 10k))
+      (place R20 161290 -129032 back 0 (PN 10k))
       (place R5 195326 -133350 back 90 (PN 10k))
     )
     (component LED_SMD:LED_0402_1005Metric
@@ -74,13 +74,13 @@
       (place D8 149860 -121158 front 0 (PN PWR))
     )
     (component "Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm"
-      (place Y1 153595 -131790 front 90 (PN 32.768))
+      (place Y1 174677 -131790 front 90 (PN 32.768))
     )
     (component "Package_SON:Texas_S-PDSO-N12"
-      (place U8 186309 -123063 back 270 (PN "BQ27441DRZR-G1B"))
+      (place U8 162179 -123825 back 270 (PN "BQ27441DRZR-G1B"))
     )
     (component "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm"
-      (place U7 181483 -124206 back 90 (PN BQ24074RGT))
+      (place U7 157353 -124968 back 90 (PN BQ24074RGT))
     )
     (component ul_SC630AULTRT:SC630AULTRT
       (place U6 195453 -119507 back 180 (PN SC630AULTRT))
@@ -99,25 +99,25 @@
     )
     (component Resistor_SMD:R_0402_1005Metric::1
       (place R19 151892 -123444 front 180 (PN 10k))
-      (place R18 189992 -120904 back 180 (PN 10k))
-      (place R17 189992 -119634 back 180 (PN 10k))
-      (place R16 185166 -118618 back 180 (PN 0.01))
-      (place R15 189865 -125730 back 180 (PN 5.1k))
-      (place R14 189865 -124206 back 0 (PN 5.1k))
-      (place R13 178308 -121412 back 225 (PN 1.13k))
-      (place R12 180213 -128397 back 270 (PN 1.18k))
-      (place R11 178308 -126492 back 270 (PN 46.4k))
+      (place R18 165862 -121666 back 180 (PN 10k))
+      (place R17 165862 -120396 back 180 (PN 10k))
+      (place R16 161036 -119380 back 180 (PN 0.01))
+      (place R15 165735 -126492 back 180 (PN 5.1k))
+      (place R14 165735 -124968 back 0 (PN 5.1k))
+      (place R13 154178 -122174 back 225 (PN 1.13k))
+      (place R12 156083 -129159 back 270 (PN 1.18k))
+      (place R11 154178 -127254 back 270 (PN 46.4k))
       (place R10 197612 -126238 back 0 (PN 50k))
       (place R9 197739 -131953 back 90 (PN 50k))
       (place R8 195072 -124587 back 0 (PN 87.5k))
       (place R6 192532 -131318 back 0 (PN 10k))
-      (place R4 192532 -122428 back 0 (PN 10k))
-      (place R3 155731 -119634 front 90 (PN 10K))
+      (place R4 168402 -123190 back 0 (PN 10k))
+      (place R3 176813 -119634 front 90 (PN 10K))
       (place R2 150368 -131572 front 0 (PN 5.1k))
       (place R1 150368 -128524 front 180 (PN 5.1k))
-      (place C24 188214 -127508 back 135 (PN 0.47u))
-      (place C23 181483 -120396 back 270 (PN 4.7u))
-      (place C22 181483 -128397 back 90 (PN 4.7u))
+      (place C24 164084 -128270 back 135 (PN 0.47u))
+      (place C23 157353 -121158 back 270 (PN 4.7u))
+      (place C22 157353 -129159 back 90 (PN 4.7u))
       (place C21 192913 -119507 back 90 (PN 2.2u))
       (place C20 194818 -117602 back 0 (PN 4.7u))
       (place C19 198628 -118872 back 0 (PN 4.7u))
@@ -132,11 +132,11 @@
       (place C10 203962 -120904 back 90 (PN 10u))
       (place C9 197739 -128143 back 270 (PN 0.47u))
       (place C8 203962 -129540 back 0 (PN 0.47u))
-      (place C7 153924 -127254 front 90 (PN 500n))
-      (place C6 154686 -123444 front 90 (PN 1u))
-      (place C5 154432 -119634 front 270 (PN 1u))
-      (place C4 154230 -129885 front 180 (PN 22u))
-      (place C3 154230 -133695 front 0 (PN 22u))
+      (place C7 175006 -127254 front 90 (PN 500n))
+      (place C6 175768 -123444 front 90 (PN 1u))
+      (place C5 175514 -119634 front 270 (PN 1u))
+      (place C4 175312 -129885 front 180 (PN 22u))
+      (place C3 175312 -133695 front 0 (PN 22u))
       (place C2 212852 -121920 back 90 (PN 100n))
       (place C1 214122 -132080 back 270 (PN 100n))
     )
@@ -151,14 +151,14 @@
     )
     (component LED_SMD:LED_0402_1005Metric::1
       (place D7 149883 -123444 front 0 (PN LED))
-      (place D6 183134 -129032 back 270 (PN D_Schottky))
+      (place D6 159004 -129794 back 270 (PN D_Schottky))
       (place D5 191262 -132588 back 0 (PN D_Schottky))
       (place D4 150368 -127254 front 180 (PN D_Schottky))
-      (place D3 186055 -130175 back 180 (PN D_Schottky))
-      (place D2 185420 -131445 back 180 (PN D_Schottky))
+      (place D3 161925 -130937 back 180 (PN D_Schottky))
+      (place D2 161290 -132207 back 180 (PN D_Schottky))
     )
     (component LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm
-      (place D1 174752 -120904 front 180 (PN WS2812B))
+      (place D1 204724 -121158 front 180 (PN WS2812B))
     )
   )
   (library
@@ -1522,12 +1522,10 @@
       "Net-(C21-Pad1)" "Net-(C21-Pad2)" "Net-(C23-Pad1)" "Net-(C24-Pad1)"
       "Net-(C3-Pad1)" "Net-(C4-Pad2)" "Net-(C6-Pad2)" "Net-(C8-Pad1)" "Net-(C9-Pad1)"
       "Net-(C9-Pad2)" "Net-(D2-Pad1)" "Net-(D7-Pad2)" "Net-(D8-Pad2)" "Net-(D9-Pad2)"
-      "Net-(J9-PadA5)" "Net-(J9-PadA8)" "Net-(J9-PadB5)" "Net-(J9-PadB8)"
-      "Net-(R11-Pad2)" "Net-(R12-Pad2)" "Net-(R13-Pad1)" "Net-(R17-Pad1)"
-      "Net-(R18-Pad1)" "Net-(R6-Pad1)" "Net-(U2-Pad15)" "Net-(U2-Pad55)" "Net-(U7-Pad1)"
-      "Net-(U7-Pad15)" "Net-(U7-Pad7)" "Net-(U8-Pad11)" "Net-(U8-Pad4)" "Net-(U8-Pad9)"
-      QCS QDAT0 QDAT1 QDAT2 QDAT3 QSCK RST SDDAT1 SDDAT2 SDDAT3 SWCLK SWDIO
-      SWDO USB_N USB_P
+      "Net-(J9-PadA5)" "Net-(J9-PadB5)" "Net-(R11-Pad2)" "Net-(R12-Pad2)"
+      "Net-(R13-Pad1)" "Net-(R17-Pad1)" "Net-(R18-Pad1)" "Net-(R6-Pad1)" "Net-(U8-Pad11)"
+      "Net-(U8-Pad4)" "Net-(U8-Pad9)" QCS QDAT0 QDAT1 QDAT2 QDAT3 QSCK RST
+      SDDAT3 SWCLK SWDIO SWDO USB_N USB_P
       (circuit
         (use_via Via[0-1]_800:400_um)
       )
@@ -1548,23 +1546,47 @@
     )
   )
   (wiring
-    (wire (path F.Cu 200  154168 -134242  154715 -133695)(net GND)(type protect))
-    (wire (path F.Cu 200  153442 -134242  154168 -134242)(net GND)(type protect))
-    (wire (path F.Cu 200  152818 -133618  153442 -134242)(net GND)(type protect))
-    (wire (path F.Cu 200  152818 -129962  152818 -133618)(net GND)(type protect))
-    (wire (path F.Cu 200  153442 -129338  152818 -129962)(net GND)(type protect))
-    (wire (path F.Cu 200  154715 -129885  154168 -129338)(net GND)(type protect))
-    (wire (path F.Cu 200  153872 -127791  153924 -127739)(net GND)(type protect))
-    (wire (path F.Cu 200  154168 -129338  153872 -129338  153872 -127791)(net GND)(type protect))
-    (wire (path F.Cu 200  153872 -129338  153442 -129338)(net GND)(type protect))
-    (wire (path F.Cu 200  153595 -133545  153745 -133695)(net "Net-(C3-Pad1)")(type protect))
-    (wire (path F.Cu 200  153595 -132490  153595 -133545)(net "Net-(C3-Pad1)")(type protect))
+    (wire (path F.Cu 200  175250 -134242  175797 -133695)(net GND)(type protect))
+    (wire (path F.Cu 200  174524 -134242  175250 -134242)(net GND)(type protect))
+    (wire (path F.Cu 200  173900 -133618  174524 -134242)(net GND)(type protect))
+    (wire (path F.Cu 200  173900 -129962  173900 -133618)(net GND)(type protect))
+    (wire (path F.Cu 200  174524 -129338  173900 -129962)(net GND)(type protect))
+    (wire (path F.Cu 200  175797 -129885  175250 -129338)(net GND)(type protect))
+    (wire (path F.Cu 200  174954 -127791  175006 -127739)(net GND)(type protect))
+    (wire (path F.Cu 200  175250 -129338  174954 -129338  174954 -127791)(net GND)(type protect))
+    (wire (path F.Cu 200  174954 -129338  174524 -129338)(net GND)(type protect))
+    (wire (path F.Cu 200  174677 -133545  174827 -133695)(net "Net-(C3-Pad1)")(type protect))
+    (wire (path F.Cu 200  174677 -132490  174677 -133545)(net "Net-(C3-Pad1)")(type protect))
     (wire (path F.Cu 200  160072 -131549  160072 -130884)(net "Net-(C3-Pad1)")(type protect))
-    (wire (path F.Cu 200  159131 -132490  160072 -131549)(net "Net-(C3-Pad1)")(type protect))
-    (wire (path F.Cu 200  153595 -132490  159131 -132490)(net "Net-(C3-Pad1)")(type protect))
-    (wire (path F.Cu 200  153745 -130940  153595 -131090)(net "Net-(C4-Pad2)")(type protect))
-    (wire (path F.Cu 200  153745 -129885  153745 -130940)(net "Net-(C4-Pad2)")(type protect))
-    (wire (path F.Cu 200  153800 -130884  153595 -131090)(net "Net-(C4-Pad2)")(type protect))
-    (wire (path F.Cu 200  159572 -130884  153800 -130884)(net "Net-(C4-Pad2)")(type protect))
+    (wire (path F.Cu 200  180213 -132490  181154 -131549)(net "Net-(C3-Pad1)")(type protect))
+    (wire (path F.Cu 200  174677 -132490  180213 -132490)(net "Net-(C3-Pad1)")(type protect))
+    (wire (path F.Cu 200  174827 -130940  174677 -131090)(net "Net-(C4-Pad2)")(type protect))
+    (wire (path F.Cu 200  174827 -129885  174827 -130940)(net "Net-(C4-Pad2)")(type protect))
+    (wire (path F.Cu 200  174882 -130884  174677 -131090)(net "Net-(C4-Pad2)")(type protect))
+    (wire (path F.Cu 200  180654 -130884  174882 -130884)(net "Net-(C4-Pad2)")(type protect))
+    (wire (path F.Cu 400  147897 -127254  147757 -127394)(net VBUS_USB_NREG)(type protect))
+    (wire (path F.Cu 400  149883 -127254  147897 -127254)(net VBUS_USB_NREG)(type protect))
+    (wire (path F.Cu 400  147157 -132194  147757 -132194)(net VBUS_USB_NREG)(type protect))
+    (wire (path F.Cu 400  146030 -131067  147157 -132194)(net VBUS_USB_NREG)(type protect))
+    (wire (path F.Cu 400  146030 -128457  146030 -131067)(net VBUS_USB_NREG)(type protect))
+    (wire (path F.Cu 400  146920 -127567  146030 -128457)(net VBUS_USB_NREG)(type protect))
+    (wire (path F.Cu 400  147515 -127567  146920 -127567)(net VBUS_USB_NREG)(type protect))
+    (wire (path F.Cu 400  147688 -127394  147515 -127567)(net VBUS_USB_NREG)(type protect))
+    (wire (path F.Cu 400  147757 -127394  147688 -127394)(net VBUS_USB_NREG)(type protect))
+    (wire (path F.Cu 200  151407 -123444  150368 -123444)(net "Net-(D7-Pad2)")(type protect))
+    (wire (path F.Cu 400  144518 -120130  146168 -120130)(net VBUS_BAT)(type protect))
+    (wire (path F.Cu 400  143845 -119457  144518 -120130)(net VBUS_BAT)(type protect))
+    (wire (path F.Cu 400  143845 -115397  143845 -119457)(net VBUS_BAT)(type protect))
+    (wire (path F.Cu 400  142748 -114300  143845 -115397)(net VBUS_BAT)(type protect))
+    (wire (path F.Cu 200  147785 -131572  147757 -131544)(net "Net-(J9-PadB5)")(type protect))
+    (wire (path F.Cu 200  149883 -131572  147785 -131572)(net "Net-(J9-PadB5)")(type protect))
+    (wire (path F.Cu 200  147777 -128524  147757 -128544)(net "Net-(J9-PadA5)")(type protect))
+    (wire (path F.Cu 200  149883 -128524  147777 -128524)(net "Net-(J9-PadA5)")(type protect))
+    (wire (path F.Cu 200  151407 -121158  150345 -121158)(net "Net-(D8-Pad2)")(type protect))
+    (wire (path F.Cu 200  151407 -118872  150345 -118872)(net "Net-(D9-Pad2)")(type protect))
+    (wire (path F.Cu 200  160597 -119534  160572 -119560)(net USB_P)(type protect))
+    (wire (path F.Cu 200  147757 -130044  147782 -130069)(net USB_N)(type protect))
+    (wire (path F.Cu 200  176480 -120636  176485 -120641)(net USB_N)(type protect))
+    (wire (path F.Cu 200  161047 -119534  161072 -119560)(net USB_N)(type protect))
   )
 )
