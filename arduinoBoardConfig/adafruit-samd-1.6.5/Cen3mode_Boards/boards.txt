@@ -1,0 +1,86 @@
+# Copyright (c) 2014-2015 Arduino LLC.  All right reserved.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+menu.cache=Cache
+menu.speed=CPU Speed
+menu.opt=Optimize
+menu.maxqspi=Max QSPI
+menu.usbstack=USB Stack
+menu.debug=Debug
+
+
+# Cen3mode Baton M4f
+# ------------------------------
+cen3mode_baton_m4f.name=Cen3mode Baton M4f
+cen3mode_baton_m4f.vid.0=0x239A
+cen3mode_baton_m4f.pid.0=0x80CD
+cen3mode_baton_m4f.vid.1=0x239A
+cen3mode_baton_m4f.pid.1=0x00CD
+cen3mode_baton_m4f.upload.tool=bossac18
+cen3mode_baton_m4f.upload.protocol=sam-ba
+cen3mode_baton_m4f.upload.maximum_size=245760
+cen3mode_baton_m4f.upload.offset=0x4000
+cen3mode_baton_m4f.upload.use_1200bps_touch=true
+cen3mode_baton_m4f.upload.wait_for_upload_port=true
+cen3mode_baton_m4f.upload.native_usb=true
+cen3mode_baton_m4f.build.mcu=cortex-m4
+#cen3mode_baton_m4f.build.f_cpu=120000000L
+cen3mode_baton_m4f.build.usb_product="Cen3mode Baton M4f"
+cen3mode_baton_m4f.build.usb_manufacturer="Cen3mode"
+cen3mode_baton_m4f.build.board=BATON_M4F
+cen3mode_baton_m4f.build.core=arduino
+cen3mode_baton_m4f.build.extra_flags=-D__SAME51J19A__ -DADAFRUIT_FEATHER_M4_EXPRESS -Dcen3mode_baton_m4f -D__SAMD51__ {build.usb_flags} -D__FPU_PRESENT -DARM_MATH_CM4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
+cen3mode_baton_m4f.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+cen3mode_baton_m4f.build.openocdscript=openocd_scripts/arduino_zero.cfg
+cen3mode_baton_m4f.build.variant=baton_m4f
+cen3mode_baton_m4f.build.variant_system_lib=
+cen3mode_baton_m4f.build.vid=0x239A
+cen3mode_baton_m4f.build.pid=0x80CD
+cen3mode_baton_m4f.bootloader.tool=openocd
+cen3mode_baton_m4f.bootloader.file=baton_m4f/bootloader-Baton_m4f-v3.13.0.bin
+cen3mode_baton_m4f.compiler.arm.cmsis.ldflags="-L{runtime.tools.CMSIS-5.4.0.path}/CMSIS/Lib/GCC/" "-L{build.variant.path}" -larm_cortexM4lf_math -mfloat-abi=hard -mfpu=fpv4-sp-d16
+cen3mode_baton_m4f.menu.cache.on=Enabled
+cen3mode_baton_m4f.menu.cache.on.build.cache_flags=-DENABLE_CACHE
+cen3mode_baton_m4f.menu.cache.off=Disabled
+cen3mode_baton_m4f.menu.cache.off.build.cache_flags=
+cen3mode_baton_m4f.menu.speed.120=120 MHz (standard)
+cen3mode_baton_m4f.menu.speed.120.build.f_cpu=120000000L
+cen3mode_baton_m4f.menu.speed.150=150 MHz (overclock)
+cen3mode_baton_m4f.menu.speed.150.build.f_cpu=150000000L
+cen3mode_baton_m4f.menu.speed.180=180 MHz (overclock)
+cen3mode_baton_m4f.menu.speed.180.build.f_cpu=180000000L
+cen3mode_baton_m4f.menu.speed.200=200 MHz (overclock)
+cen3mode_baton_m4f.menu.speed.200.build.f_cpu=200000000L
+cen3mode_baton_m4f.menu.opt.small=Small (-Os) (standard)
+cen3mode_baton_m4f.menu.opt.small.build.flags.optimize=-Os
+cen3mode_baton_m4f.menu.opt.fast=Fast (-O2)
+cen3mode_baton_m4f.menu.opt.fast.build.flags.optimize=-O2
+cen3mode_baton_m4f.menu.opt.faster=Faster (-O3)
+cen3mode_baton_m4f.menu.opt.faster.build.flags.optimize=-O3
+cen3mode_baton_m4f.menu.opt.fastest=Fastest (-Ofast)
+cen3mode_baton_m4f.menu.opt.fastest.build.flags.optimize=-Ofast
+cen3mode_baton_m4f.menu.opt.dragons=Here be dragons (-Ofast -funroll-loops)
+cen3mode_baton_m4f.menu.opt.dragons.build.flags.optimize=-Ofast -funroll-loops
+cen3mode_baton_m4f.menu.maxqspi.50=50 MHz (standard)
+cen3mode_baton_m4f.menu.maxqspi.50.build.flags.maxqspi=-DVARIANT_QSPI_BAUD_DEFAULT=50000000
+cen3mode_baton_m4f.menu.maxqspi.fcpu=CPU Speed / 2
+cen3mode_baton_m4f.menu.maxqspi.fcpu.build.flags.maxqspi=-DVARIANT_QSPI_BAUD_DEFAULT=({build.f_cpu})
+cen3mode_baton_m4f.menu.usbstack.arduino=Arduino
+cen3mode_baton_m4f.menu.usbstack.tinyusb=TinyUSB
+cen3mode_baton_m4f.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
+cen3mode_baton_m4f.menu.debug.off=Off
+cen3mode_baton_m4f.menu.debug.on=On
+cen3mode_baton_m4f.menu.debug.on.build.flags.debug=-g
